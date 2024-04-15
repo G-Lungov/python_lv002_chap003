@@ -33,7 +33,7 @@ def main():
         4: 0.15 # 721 +
     }
     # Alíquota storage
-    aliquota = ()
+    aliquota = float()
     aliquota_percentage = (aliquota * 100)
     # Alíquota to be applied
     if days_invested <= 180:
@@ -64,4 +64,4 @@ def main():
     else:
         print("Não será aplicado nenhuma alíquota sobre seu saque. ")
         print(f"A quantia total a ser sacada pe de R$ {withdraw} . ")
-    
+main()
