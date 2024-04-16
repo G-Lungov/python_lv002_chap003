@@ -39,3 +39,4 @@ def main():
         print("Houve um empate entre os seguintes dias:")
         for day in chosen_day:
             print(day)
+main()

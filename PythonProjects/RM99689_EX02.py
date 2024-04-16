@@ -30,8 +30,9 @@ def main():
     }
 
     # Print the table of installment options
-    print("\nTabela de parcelamento:")
+    print("\n Tabela de parcelamento:")
     print("{:<10} {:<25} {:<20}".format("Parcelas", "Preço da Parcela", "Preço Final"))
     for num_installments, interest_rate in installments.items():
         installment_price = calculate_installment_price(final_price, num_installments, interest_rate)
-    
+        print(installment_price)
+main()

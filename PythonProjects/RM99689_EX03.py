@@ -22,9 +22,10 @@ def main():
         12: 25
     }
 
-    # print("Valor da dívida | Valor do juros | Quantidade de parcelas | Valor da parcela")
+    print("Valor da dívida | Valor do juros | Quantidade de parcelas | Valor da parcela")
     
     # Iterate over each option and calculate the loan details
     for num_installments, interest_rate in options.items():
         total_debt, installment_value = calculate_loan(debt, interest_rate, num_installments)
         print(f"Total: R$ {debt:.2f} Juros: R$ {interest_rate}% Número de parcelas: {num_installments} Valor da parcela R$ {installment_value:.2f}")
+main()
